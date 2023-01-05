@@ -11,4 +11,4 @@ jobs:
       - name: Install GLFW3
         run: vcpkg install glfw3
       - name: Build
-        run: .\scripts\build.bat
+        run: set CMAKE_TOOLCHAIN_FILE=C:\\Program Files\vcpkg\scripts\buildsystems\vcpkg.cmake && .\scripts\build.bat
