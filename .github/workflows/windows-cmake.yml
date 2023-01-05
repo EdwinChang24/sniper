@@ -8,9 +8,5 @@ jobs:
       - uses: actions/checkout@v3
         with:
           submodules: recursive
-      - name: Install GLFW3
-        run: vcpkg install glfw3
-      - name: Test
-        run: type "C:\\Program Files\vcpkg\scripts\buildsystems\vcpkg.cmake"
       - name: Build
-        run: set CMAKE_TOOLCHAIN_FILE="C:\\Program Files\vcpkg\scripts\buildsystems\vcpkg.cmake" && .\scripts\build.bat
+        run: .\scripts\build.bat
